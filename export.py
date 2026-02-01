@@ -22,7 +22,7 @@ def exporter():
     relats = resp.json()
     
     if not isinstance(relats, list):
-        print(f"{lb}[{rd}!{lb}] {w}Unexpected response format")
+        print(f"{lb}[{rd}!{lb}] {w}Unexpected resp format")
         return
     
     with open("friends.txt", "w") as f:
